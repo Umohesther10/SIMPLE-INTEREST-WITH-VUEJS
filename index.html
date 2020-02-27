@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Simple Interest Calculator</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <link rel="stylesheet" href="./index.css">
+
+</head>
+<body>
+    <div id="app">
+        <div class="container">
+            <h1 style="text-align:center; padding-top:20px; color: grey;"> SIMPLE INTEREST CALCULATOR</h1>
+                <label class= "button">Principal:</label>
+                <input class="increase" v-model="principal"type="number" placeholder="Enter the Amount"><br>
+                <label class="button">Rate:</label>
+                <input class="increase" v-model="rate" type="number" placeholder="Rate"><br>
+                <label class="button">Time:</label>
+                <input class="increase"  v-model="time" type="number" placeholder="Time">
+                <p id="center">The Simple Interest Is ₦ {{simpleInterest()}} </p>
+        
+        </div>
+    </div>
+    <script src="app.js"></script>
+    
+</body>
+</html>
